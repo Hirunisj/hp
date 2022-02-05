@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Headache Prediction Sysyem</title>
+	<link rel="stylesheet" href="./../static/home.css" />
+	<link rel="stylesheet" href="./../static/main.css" />
+
+	<link rel="shortcut icon" href="./../static/img/logo.png" />
+
+	   <style>
+
+
+
+.footer {
+background-color: black ;
+padding: 10px;
+text-align: center;
+color: white; 
+}
+
+</style>
+
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div id="sitename">
+				<img src="./../static/img/logo.png" alt="Site Logo" />
+				<h1>Headache Prediction System</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="#s" id="serv">Services</a></li>
+					<li><a href="#a">About Us</a></li>
+					<li><a href="index.html">Prediction</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+
+	
+
+	<section class="welcometxt">
+		<h2>Welcome to Headache Prediction Official Website, We provide solutions to your headache.</h2>
+	<br><br>
+
+
+	<section class="txt">
+		<a name="s"><h3>PHYSICAL AND BEHAVIOURAL EXERCISES</h3></a>
+	</section>
+
+<nav>
+        <h3 class="navItem" id="item1">Migrain Headache</h3>
+        <table class="navTable" id="item1_Table">
+            <h1>Jogging</h1> 
+            <h1>running</h1> 
+            <h1>cycling</h1> 
+            <h1>walking</h1> 
+            <h1>Swimming</h1> 
+
+
+
+        </table>
+
+        <h3 class="navItem" id="item2">Cluster Headache</h3>
+        <table class="navTable" id="item2_Table">
+            <h1>Breathing exercises,</h1>
+<h1>Breathe in slowly through your nose as you count to five.</h1>
+<h1>Breathe out slowly through your nose as you count to five.</h1>
+<h1>Repeat and see if you can feel yourself relax with each breath.</h1>
+
+        </table>
+
+        <h3 class="navItem" id="item3">tension Headache </h3>
+        <table class="navTable" id="item3_Table">
+            <h1>simply stretching</h1>
+<h1>deep breathing </h1>
+<h1>practicing progressive muscle relaxation</h1>
+
+        </table>
+    </nav>
+
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+        var up1=false;
+        var up2=false;
+        var up3=false;
+		$(document).ready(function(){
+            
+			$('#item1').click(function(){
+                up1=true;
+				$('#item1_Table').slideToggle("slow");
+                if(up2==true){
+                    up2=false;
+                    $('#item2_Table').slideToggle("slow");
+                }
+                if(up3==true){
+                    up3=false;
+                    $('#item3_Table').slideToggle("slow");
+                }
+			});
+		});
+
+        $(document).ready(function(){
+            
+			$('#item2').click(function(){
+                up2=true;
+				$('#item2_Table').slideToggle("slow");
+                if(up1==true){
+                    up1=false;
+                    $('#item1_Table').slideToggle("slow");
+                }
+                if(up3==true){
+                    up3=false;
+                    $('#item3_Table').slideToggle("slow");
+                }
+			});
+		});
+
+        $(document).ready(function(){
+            
+			$('#item3').click(function(){
+                up3=true;
+				$('#item3_Table').slideToggle("slow");
+                if(up1==true){
+                    up1=false;
+                    $('#item1_Table').slideToggle("slow");
+                }
+                if(up2==true){
+                    up2=false;
+                    $('#item2_Table').slideToggle("slow");
+                }
+			});
+		});
+	</script>
+
+
+
+
+    <br><br>
+	
+    <br><br>
+    
+    <br><br>
+    
+    <br><br>
+    
+    <br><br>
+    
+    <br><br>
+    
+    <br><br>
+    
+	<div class="footer">
+	
+      <br><p>Copyright &copy; 2019, Headache Prediction System.</p> </br> 
+      
+    </div>
+
+</body>
+</html>

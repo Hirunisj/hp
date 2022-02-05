@@ -1,0 +1,42 @@
+table { 
+	width: 750px; 
+	border-collapse: collapse; 
+	margin:40px auto;
+}
+.navTable{
+    display: none;
+    color: black;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+}
+
+th { 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+}
+
+td, th { 
+	padding: 5px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+}
+
+
+/* Nav Items */
+.navItem{
+    background-color: #002e2e;
+    color: white;
+    padding: 10px;
+}
+nav h3{
+    margin: 3px 0;
+}
+
+h1{
+	color: black;
+}
